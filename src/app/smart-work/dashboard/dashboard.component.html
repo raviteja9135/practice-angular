@@ -1,4 +1,4 @@
 <p>dashboard works!</p>
-<h1>{{doubleCount()}}</h1>
 <h1>{{count()}}</h1>
+<smart-work-dashboard-tile [valueInput]="count()" (updateString)="showEnter()"> </smart-work-dashboard-tile>
 <button type="button" (click)="updateCount()">Update Count</button>

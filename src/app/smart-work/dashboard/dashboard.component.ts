@@ -6,8 +6,11 @@ import { Component, Signal, WritableSignal, computed, signal } from '@angular/co
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
+showEnter() {
+throw new Error('Method not implemented.');
+}
   count:WritableSignal<number> = signal(0);
-  doubleCount:Signal<string> = computed(()=> `the current Count is ${this.count()}`);
+  
   constructor(){
 
   }
@@ -18,6 +21,5 @@ export class DashboardComponent {
   updateCount() {
     
     this.count.update(value => value+1);
-    console.log(this.doubleCount());
   }
 }
